@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    width="128"
+    height="128"
+    viewBox="0 0 128 128"
+    xmlns="http://www.w3.org/2000/svg"
+>
+    <!-- Background rounded square -->
+    <rect
+        x="8"
+        y="8"
+        width="112"
+        height="112"
+        rx="16"
+        ry="16"
+        fill="#0A66C2"
+    />
+
+    <!-- "in" text group -->
+    <!-- i bar -->
+    <rect
+        x="38"
+        y="46"
+        width="8"
+        height="36"
+        fill="#FFFFFF"
+    />
+
+    <!-- i dot -->
+    <circle
+        cx="42"
+        cy="36"
+        r="4"
+        fill="#FFFFFF"
+    />
+
+    <!-- n vertical bar -->
+    <rect
+        x="56"
+        y="46"
+        width="8"
+        height="36"
+        fill="#FFFFFF"
+    />
+
+    <!-- n curved right part (path trace) -->
+    <path
+        d="
+            M 64 46
+            L 76 46
+            C 86 46 92 52 92 64
+            L 92 82
+            L 84 82
+            L 84 64
+            C 84 58 80 54 74 54
+            L 64 54
+            Z
+        "
+        fill="#FFFFFF"
+    />
+</svg>
