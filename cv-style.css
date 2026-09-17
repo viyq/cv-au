@@ -17,7 +17,7 @@ header
 	padding: 4px;
 	height: 25%;
 	width: 100%;
-    font-size:20.0pt;
+    font-size:1.2rem;
 	color:#e02333;
 	text-align: center;
 }
@@ -28,14 +28,15 @@ nav
 	margin-bottom:6.0pt; */
 	/* margin-left:5cm;
 	margin-right:3cm; */
-	font-size:14.0pt;
+	font-size:1.3rem;
 	font-family:'Courier New', Courier, monospace;
 	font-weight:bold;
 	text-transform:uppercase;
-	letter-spacing:2.0pt;
+	letter-spacing:1.0pt;
 	color:#3b996b;
-	width:50%;
-	float: right;
+	max-width:100%;
+	/*float: right;*/
+	margin:auto;
 	
 }
 
@@ -51,11 +52,11 @@ section {
 h2
 	{
 	margin-top:12.0pt;
-	margin-right:0cm;
+
 	margin-bottom:0.5cm;
-	margin-left:5cm;
+
 	page-break-after:avoid;
-	font-size:30.0pt;
+	font-size:1.9rem;
 	font-family:"Rosario";
 	font-weight:bold;
 	color:#3b996b;
@@ -63,19 +64,16 @@ h2
 
 #title {
 	text-align: center;
-	margin-right:3cm;
 }
 
 h3
 	{
 	margin-top:0.5cm;
-	margin-right:0cm;
     margin: top 24px;
 	margin: bottom 24px;
-	margin-left:5cm;
 	line-height:12.0pt;
 	page-break-after:avoid;
-	font-size:19.0pt;
+	font-size:1.3rem;
 	font-family:"Rosario", sans-serif;
 	color:#3b996b;
 	font-weight:normal;
@@ -84,13 +82,9 @@ h3
 
 p
 {
-	font-size:15.0pt;
+	font-size:1rem;
 	font-family:"Rosario", sans-serif;
 	color: royalblue;
-	margin-top:0cm;
-	margin-right:1cm;
-	margin-left:5cm;
-	margin-bottom:0.5cm;
 	padding: 0.5cm;
 }
 
@@ -102,8 +96,13 @@ vertical-align: 70%;
 	color: maroon;
 }
 
+.container {
+max-width: l000px;
+margin: auto;
+}
+
 hr {
-	margin-left:5cm;
+	margin-left: 2%;
 }
 
 /* Rule with thin borde */
@@ -140,6 +139,7 @@ vertical-align: 100%;
 
 img {
 	vertical-align: middle;
+	max-width: 30%;	
 	}
 
 #me {
@@ -148,6 +148,8 @@ img {
 	float: right;
 	margin-right:3%;
 	transform: rotate(15deg);
+	max-width: 30%;
+    display: block;
 }
 footer
 	{
