@@ -9,6 +9,15 @@
 }
 /* Style Definitions */
 
+body.page-about,
+body.page-hobby {
+	background-color: papayawhip;
+}
+
+body.page-cv {
+	background-color: #01110a;
+}
+
 header
 	{
 	margin-top:12.0pt;
@@ -83,15 +92,13 @@ section {
 h2
 	{
 	margin-top:12.0pt;
-
 	margin-bottom:0.5cm;
-
 	page-break-after:avoid;
 	font-size:1.9rem;
 	font-family:"Rosario";
 	font-weight:bold;
 	color:#3b996b;
-	text-shadow: -2px -2px 4px orangered}
+	text-shadow: -1px -1px 2px orangered}
 
 #title {
 	text-align: center;
@@ -99,11 +106,10 @@ h2
 
 h3
 	{
-	margin-top:0.5cm;
-    margin: top 24px;
-	margin: bottom 24px;
+    margin-top: 24px;
+	margin-bottom: 24px;
 	line-height:12.0pt;
-	page-break-after:avoid;
+	break-after:avoid;
 	font-size:1.3rem;
 	font-family:"Rosario", sans-serif;
 	color:#3b996b;
@@ -113,7 +119,7 @@ h3
 
 p
 {
-	font-size:1rem;
+	font-size:1.1rem;
 	font-family:"Rosario", sans-serif;
 	color: royalblue;
 	padding: 0.5cm;
@@ -128,7 +134,7 @@ vertical-align: 70%;
 }
 
 .container {
-max-width: l000px;
+max-width: 1000px;
 margin: auto;
 }
 
@@ -179,8 +185,13 @@ img {
 	float: right;
 	margin-right:3%;
 	transform: rotate(15deg);
+	width: 12%;
 	max-width: 30%;
     display: block;
+}
+
+.contact-icon {
+	width: 5%;
 }
 footer
 	{
@@ -199,3 +210,26 @@ footer
 	width: 100%;
 	
 	}
+
+table {
+  border-collapse: collapse;
+	border: 2px solid rgb(200, 200, 200);
+  font-family:"Rosario", sans-serif;
+  font-size: 1rem;
+  color: rgb(154, 226, 239);
+  padding: 0.2cm;
+}
+
+td,
+th {
+	border: 1px solid rgb(190, 190, 190);
+  padding: 10px 20px;
+}
+
+td {
+  text-align: center;
+}
+
+.column-fixed-width {
+  width: 50%;
+}
