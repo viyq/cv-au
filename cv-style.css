@@ -9,6 +9,11 @@
 }
 /* Style Definitions */
 
+body {
+	height: auto;
+	min-height: 100dvh;	
+}
+
 body.page-about,
 body.page-hobby {
 	background-color: papayawhip;
@@ -17,6 +22,13 @@ body.page-hobby {
 body.page-cv {
 	background-color: #01110a;
 }
+
+.container {
+flex: 1;
+max-width: 700px;
+margin: auto;
+}
+
 
 header
 	{
@@ -33,28 +45,18 @@ header
 
 nav
 	{
-	/* margin-top:0.5cm;
-	margin-bottom:6.0pt; */
-	/* margin-left:5cm;
-	margin-right:3cm; */
 	font-size:1.3rem;
-	font-family:'Courier New', Courier, monospace;
+	font-family:sans-serif;
 	font-weight:bold;
 	text-transform:uppercase;
 	letter-spacing:1.0pt;
 	color:#3b996b;
 	max-width:100%;
-	/*float: right;*/
 	margin:auto;
+	background: #94e8c0;
 	
 }
 
-
-nav {
-	font-family: sans-serif;
-	font-weight: bold;
-	background: #94e8c0;
-}
 
 nav ul {
 	padding: 0px;
@@ -83,9 +85,8 @@ nav a.active {
 section {
 	margin: 0px;
 	padding: 5px;
-	height: 125px;
+	height: auto;
 	width: 100%;
-	float: left;
 }
 
 
@@ -131,11 +132,6 @@ vertical-align: 70%;
 
 .fontcolor {
 	color: maroon;
-}
-
-.container {
-max-width: 1000px;
-margin: auto;
 }
 
 hr {
