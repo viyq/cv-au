@@ -1,0 +1,201 @@
+ /* Font Definitions */
+@font-face {
+    font-family: 'Rosario';
+    src: url('Rosario-Italic.woff2') format('woff2'),
+        url('Rosario-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+/* Style Definitions */
+
+header
+	{
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	padding: 4px;
+	height: 25%;
+	width: 100%;
+    font-size:1.2rem;
+	color:#e02333;
+	text-align: center;
+}
+
+nav
+	{
+	/* margin-top:0.5cm;
+	margin-bottom:6.0pt; */
+	/* margin-left:5cm;
+	margin-right:3cm; */
+	font-size:1.3rem;
+	font-family:'Courier New', Courier, monospace;
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:1.0pt;
+	color:#3b996b;
+	max-width:100%;
+	/*float: right;*/
+	margin:auto;
+	
+}
+
+
+nav {
+	font-family: sans-serif;
+	font-weight: bold;
+	background: #94e8c0;
+}
+
+nav ul {
+	padding: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+	color: peru;
+	padding: 1rem;
+	display: block;
+}
+
+nav a:hover {
+	background: #33d0e875;
+}
+
+nav a.active {
+	background: #adc5b6;
+}
+
+
+section {
+	margin: 0px;
+	padding: 5px;
+	height: 125px;
+	width: 100%;
+	float: left;
+}
+
+
+h2
+	{
+	margin-top:12.0pt;
+
+	margin-bottom:0.5cm;
+
+	page-break-after:avoid;
+	font-size:1.9rem;
+	font-family:"Rosario";
+	font-weight:bold;
+	color:#3b996b;
+	text-shadow: -2px -2px 4px orangered}
+
+#title {
+	text-align: center;
+}
+
+h3
+	{
+	margin-top:0.5cm;
+    margin: top 24px;
+	margin: bottom 24px;
+	line-height:12.0pt;
+	page-break-after:avoid;
+	font-size:1.3rem;
+	font-family:"Rosario", sans-serif;
+	color:#3b996b;
+	font-weight:normal;
+	line-height: 110%;
+}
+
+p
+{
+	font-size:1rem;
+	font-family:"Rosario", sans-serif;
+	color: royalblue;
+	padding: 0.5cm;
+}
+
+p > span {
+vertical-align: 70%;
+}
+
+.fontcolor {
+	color: maroon;
+}
+
+.container {
+max-width: l000px;
+margin: auto;
+}
+
+hr {
+	margin-left: 2%;
+}
+
+/* Rule with thin borde */
+hr.rule1 {
+  border: 1.5px solid white;
+}
+
+
+/* Rule with peru border */
+hr.rule2 {
+  border: 2px solid peru;
+}
+
+hr.rule3 {
+  border: 2px solid peru;
+  border-radius: 2px;
+}
+
+
+ul {
+	padding-left: 47%; 
+	margin-right:1%;
+	margin-bottom:0cm;
+}	
+
+ul.tap { list-style-image: url("img/tap.svg");
+	 list-style-position: inside;}
+
+ul > li > span{
+display: inline-block;
+vertical-align: 100%;
+}
+
+
+img {
+	vertical-align: middle;
+	max-width: 30%;	
+	}
+
+#me {
+	border: 3px solid;
+	color:#3b996b;
+	float: right;
+	margin-right:3%;
+	transform: rotate(15deg);
+	max-width: 30%;
+    display: block;
+}
+footer
+	{
+	clear: both;
+	/* margin-left:5cm;
+	margin-right:3cm; */
+	margin: 0px;
+	padding: 10px;
+
+	line-height:14.0pt;
+	font-size:13.0pt;
+	font-family:"Rosario";
+	color:#3b996b;
+	text-align: center;
+	height:25px;
+	width: 100%;
+	
+	}
