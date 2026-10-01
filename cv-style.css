@@ -9,20 +9,22 @@
 }
 /* Style Definitions */
 
+body {
+	height: auto;
+	min-height: 100dvh;	
+}
 
 body.page-about,
 body.page-hobby {
 	background-color: papayawhip;
-
 }
 
 body.page-cv {
 	background-color: #01110a;
-
 }
 
 .container {
-flex-grow: 1;
+flex: 1;
 max-width: 700px;
 margin: auto;
 }
@@ -83,9 +85,8 @@ nav a.active {
 section {
 	margin: 0px;
 	padding: 5px;
-	height: 125px;
+	height: auto;
 	width: 100%;
-	float: left;
 }
 
 
