@@ -10,31 +10,24 @@
 /* Style Definitions */
 
 body {
-	height: auto;
-	min-height: 100dvh;	
-}
-
-body.page-about,
-body.page-hobby {
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
 	background-color: papayawhip;
 }
 
-body.page-cv {
-	background-color: #01110a;
-}
-
 .container {
-flex: 1;
-max-width: 700px;
-margin: auto;
+	flex: 1;
+	width: min(100% - 2rem, 700px);
+	margin: 0 auto;
 }
 
 
 header
 	{
-	margin-top:12.0pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
+	margin-top:5px;
+	margin-right:0px;
+	margin-bottom:0px;
 	padding: 4px;
 	height: 25%;
 	width: 100%;
@@ -42,6 +35,7 @@ header
 	color:#e02333;
 	text-align: center;
 }
+
 
 nav
 	{
@@ -51,8 +45,10 @@ nav
 	text-transform:uppercase;
 	letter-spacing:1.0pt;
 	color:#3b996b;
+	width:100%;
 	max-width:100%;
-	margin:auto;
+	margin: 0;;
+	box-sizing:border-box;
 	background: #94e8c0;
 	
 }
@@ -83,19 +79,19 @@ nav a.active {
 
 
 section {
-	margin: 0px;
+	margin: 0;
 	padding: 5px;
 	height: auto;
 	width: 100%;
 }
 
 
-h2
+h1
 	{
-	margin-top:12.0pt;
-	margin-bottom:0.5cm;
+	margin-top:5px;
+	margin-bottom:5px;
 	page-break-after:avoid;
-	font-size:1.9rem;
+	font: size 1.3rem;
 	font-family:"Rosario";
 	font-weight:bold;
 	color:#3b996b;
@@ -105,11 +101,11 @@ h2
 	text-align: center;
 }
 
-h3
+h2
 	{
-    margin-top: 24px;
-	margin-bottom: 24px;
-	line-height:12.0pt;
+    margin-top: 10px;
+	margin-bottom: 10px;
+	line-height:3px;
 	break-after:avoid;
 	font-size:1.3rem;
 	font-family:"Rosario", sans-serif;
@@ -123,7 +119,7 @@ p
 	font-size:1.1rem;
 	font-family:"Rosario", sans-serif;
 	color: royalblue;
-	padding: 0.5cm;
+	padding: 5px;
 }
 
 p > span {
@@ -145,20 +141,13 @@ hr.rule1 {
 
 
 /* Rule with peru border */
-hr.rule2 {
-  border: 2px solid peru;
+hr.rule2, hr.rule3 {
+  border: 1.7px solid peru;
 }
-
-hr.rule3 {
-  border: 2px solid peru;
-  border-radius: 2px;
-}
-
 
 ul {
-	padding-left: 47%; 
 	margin-right:1%;
-	margin-bottom:0cm;
+	margin-bottom:0;
 }	
 
 ul.tap { list-style-image: url("img/tap.svg");
@@ -178,12 +167,25 @@ img {
 #me {
 	border: 3px solid;
 	color:#3b996b;
-	float: right;
-	margin-right:3%;
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	max-width: 100%;
+	object-fit: cover;
+	display: block;
+	flex: 0 0 150px;
 	transform: rotate(15deg);
-	width: 12%;
-	max-width: 30%;
-    display: block;
+}
+
+.profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.profile-copy {
+	min-width: 0;
 }
 
 .contact-icon {
@@ -192,13 +194,10 @@ img {
 footer
 	{
 	clear: both;
-	/* margin-left:5cm;
-	margin-right:3cm; */
 	margin: 0px;
 	padding: 10px;
-
-	line-height:14.0pt;
-	font-size:13.0pt;
+	line-height:10px;
+	font-size:1.2rem;
 	font-family:"Rosario";
 	color:#3b996b;
 	text-align: center;
@@ -207,25 +206,51 @@ footer
 	
 	}
 
-table {
-  border-collapse: collapse;
-	border: 2px solid rgb(200, 200, 200);
-  font-family:"Rosario", sans-serif;
-  font-size: 1rem;
-  color: rgb(154, 226, 239);
-  padding: 0.2cm;
+.portfolio-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
 }
 
-td,
-th {
-	border: 1px solid rgb(190, 190, 190);
-  padding: 10px 20px;
+.page-portfolio .container {
+	max-width: 1100px;
 }
 
-td {
-  text-align: center;
+.project-card {
+	border: 2px solid peru;
+	border-radius: 4px;
+	padding: 0.75rem;
+	min-width: 0;
 }
 
-.column-fixed-width {
-  width: 50%;
+.project-card h3 {
+	margin: 0.5rem 0;
+}
+
+.project-card p {
+	margin: 0.5rem 0;
+	padding: 0.25rem;
+	color: maroon;
+}
+
+.project-card .project-year {
+	font-weight: bold;
+}
+
+@media (min-width: 768px) {
+	.profile {
+		flex-direction: row-reverse;
+		align-items: flex-start;
+		gap: 1.5rem;
+	}
+
+	.portfolio-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (min-width: 1024px) {
+	.portfolio-grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
 }
