@@ -9,11 +9,24 @@
 }
 /* Style Definitions */
 
+:root {
+	--color-page-background: #ffefd5;
+	--color-header-text: #e02333;
+	--color-green: #3b996b;
+	--color-nav-background: #94e8c0;
+	--color-peru: peru;
+	--color-nav-hover-background: #33d0e875;
+	--color-nav-active-background: #adc5b6;
+	--color-paragraph-text: royalblue;
+	--color-maroon: maroon;
+	--color-white: white;
+}
+
 body {
 	min-height: 100dvh;
 	display: flex;
 	flex-direction: column;
-	background-color: papayawhip;
+	background-color: var(--color-page-background);
 }
 
 .container {
@@ -32,7 +45,7 @@ header
 	height: 25%;
 	width: 100%;
     font-size:1.2rem;
-	color:#e02333;
+	color: var(--color-maroon);
 	text-align: center;
 }
 
@@ -44,12 +57,12 @@ nav
 	font-weight:bold;
 	text-transform:uppercase;
 	letter-spacing:1.0pt;
-	color:#3b996b;
+	color: var(--color-maroon);
 	width:100%;
 	max-width:100%;
 	margin: 0;;
 	box-sizing:border-box;
-	background: #94e8c0;
+	background: var(--color-nav-background);
 	
 }
 
@@ -64,17 +77,17 @@ nav ul {
 
 nav a {
 	text-decoration: none;
-	color: peru;
+	color: var(--color-maroon);
 	padding: 1rem;
 	display: block;
 }
 
 nav a:hover {
-	background: #33d0e875;
+	background: var(--color-nav-hover-background);
 }
 
 nav a.active {
-	background: #adc5b6;
+	background: var(--color-nav-active-background);
 }
 
 
@@ -91,11 +104,11 @@ h1
 	margin-top:5px;
 	margin-bottom:5px;
 	page-break-after:avoid;
-	font: size 1.3rem;
+	font: size 1rem;
 	font-family:"Rosario";
 	font-weight:bold;
-	color:#3b996b;
-	text-shadow: -1px -1px 2px orangered}
+	color: var(--color-maroon);
+	}
 
 #title {
 	text-align: center;
@@ -107,18 +120,18 @@ h2
 	margin-bottom: 10px;
 	line-height:3px;
 	break-after:avoid;
-	font-size:1.3rem;
+	font-size:1.2rem;
 	font-family:"Rosario", sans-serif;
-	color:#3b996b;
+	color: var(--color-maroon);
 	font-weight:normal;
 	line-height: 110%;
 }
 
 p
 {
-	font-size:1.1rem;
+	font-size:1rem;
 	font-family:"Rosario", sans-serif;
-	color: royalblue;
+	color: var(--color-maroon);
 	padding: 5px;
 }
 
@@ -127,7 +140,7 @@ vertical-align: 70%;
 }
 
 .fontcolor {
-	color: maroon;
+	color: var(--color-maroon);
 }
 
 hr {
@@ -136,13 +149,13 @@ hr {
 
 /* Rule with thin borde */
 hr.rule1 {
-  border: 1.5px solid white;
+  border: 1.5px solid var(--color-white);
 }
 
 
 /* Rule with peru border */
 hr.rule2, hr.rule3 {
-  border: 1.7px solid peru;
+  border: 1.7px solid var(--color-maroon);
 }
 
 ul {
@@ -166,7 +179,7 @@ img {
 
 #me {
 	border: 3px solid;
-	color:#3b996b;
+	color: var(--color-maroon);
 	width: 100px;
 	height: 100px;
 	box-sizing: border-box;
@@ -199,7 +212,7 @@ footer
 	line-height:10px;
 	font-size:1.2rem;
 	font-family:"Rosario";
-	color:#3b996b;
+	color: var(--color-maroon);
 	text-align: center;
 	height:25px;
 	width: 100%;
@@ -217,7 +230,7 @@ footer
 }
 
 .project-card {
-	border: 2px solid peru;
+	border: 2px solid var(--color-maroon);
 	border-radius: 4px;
 	padding: 0.75rem;
 	min-width: 0;
@@ -230,7 +243,7 @@ footer
 .project-card p {
 	margin: 0.5rem 0;
 	padding: 0.25rem;
-	color: maroon;
+	color: var(--color-maroon);
 }
 
 .project-card .project-year {
